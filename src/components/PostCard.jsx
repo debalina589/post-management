@@ -7,7 +7,7 @@ function PostCard({ post, onDeletePost }) {
     ? `${post.content.slice(0, 120)}...`
     : post.content;
 
-    const formattedDate = new Date(post.createAt).toLocaleDateString(
+    const formattedDate = new Date(post.createdAt).toLocaleDateString(
         'en-IN',
         {
             day: 'numeric',
